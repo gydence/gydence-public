@@ -1,2 +1,3 @@
-# gydence-public
-Public issues and discussion for Gydence
+# Gydence
+
+Public issues, discussion, and documentation for [gydence.com](gydence.com).
