@@ -6,14 +6,68 @@ Gydence is built on [three.js](https://threejs.org/), [A-FRAME](https://aframe.i
 
 Gydence is currently in early alpha.
 
+
 # Getting Started
 
-When you first open the editor, you will be prompted to create a new project. Projects have a few properties:
+When you first open the editor, you are prompted to create a new project. Projects have a few properties:
 
 | Property    | Description |
 | ----------- | ----------- |
-| Name        | The name of your project.  This will appear in the Project selection dropdown and as the title of the page when you visit it. |
+| Name        | The name of your project.  This appears in the Project selection dropdown and as the title of the page when you visit it. |
 | Editors     | Comma separated list of emails for accounts to which you'd like to give access to your project.  Editors can access your project and edit collaboratively.  Only the creator of a project can delete it. |
-| Template    | Templates are starting points for your projects, including 2D UI, 3D content, scripts, apps, and assets.  Templates can be purchased from the [marketplace](/marketplace). |
-| Environment | Environments are purely aesthetic surroundings for the editor.  They do not affect your published project.  Templates can be purchased from the [marketplace](/marketplace). |
+| Template    | [Templates](/templates) are starting points for your projects, including 2D UI, 3D content, scripts, apps, and assets.  [Templates](/templates) can be purchased from the [marketplace](/marketplace). |
+| Environment | Environments are purely aesthetic surroundings for the editor.  They do not affect your published project.  Environments can be purchased from the [marketplace](/marketplace). |
 
+After creating your project, you can edit any of its properties except for its template.  **Your project is not publicly viewable until you have chosen to publish it.**  At any point, you can choose to unlist your project.  If you are the creator of a project, you can also choose to delete it completely.
+
+
+# Editor
+
+The editor allows you to make changes your projects and use the marketplace.  Here is a diagram of the different parts of the editor:
+
+![/assets/editor.png]
+
+| Number    | Description |
+| --------- | ----------- |
+| 1 | **Main menu.**  From here, you can create new [3D entities](/entities), add and edit [scripts](scripts), [assets](/assets), and [apps](/apps), and visit or upload to the [marketplace](/marketplace). |
+| 2 | **Scene graph.**  Choose or edit your current project or create a new one and bring up the property panel for the [scene](/scene), [2D UI](/overlay), or [3D entities](/entities). |
+| 3 | **Property panel.**  The properties of the currently selected item.  For the [scene](/scene) and [entities](/entities), these are A-FRAME component properties.  For [2D UI](/overlay), [scripts](scripts), [assets](/assets), and [apps](/apps), these can be code editors or more specific functions. |
+| 4 | **Item List.**  When [scripts](scripts), [assets](/assets), or [apps](/apps) is selected in the main menu, this panel lists all of the items of the selected type in use by your site or that you own.  You can add additional items of that type or delete them from your site. |
+| 5 | **Preview / Publish.** Preview your site to see what it looks like to a visitor.  Publish your site to make it public.  Changes made in the editor do not appear publicly until you publish your project again. |
+| 6 | **Info and Log out.**  Log out of the editor.  If multiple people are editing at the same time, hover over the count to see their emails. |
+
+## Controls
+
+Default controls for the editor:
+
+| Key    | Behavior    |
+| ------ | ----------- |
+| W | Move forward. |
+| A | Move left. |
+| S | Move backwards. |
+| D | Move right. |
+| Z | Move up. |
+| X | Move down. |
+| Q | Turn left. |
+| E | Turn right. |
+| C | Turn up. |
+| V | Turn down. |
+| Shift | Hold to slow down movements. |
+| 1 | First person mode. |
+| 2 | Third person mode. |
+| Control | Hold to interact with 2D content while in the editor.  By default, pointer events on the 2D UI are disabled - unless explicitly enabled in your 2D UI - while editing to allow you to interact with the 3D content.
+
+
+# Next Steps
+
+Now that you've got a project set up, add some content!  Check out more information on the different elements you can use:
+
+- [Templates](/templates)
+- [Scene properties](/scene)
+- [2D UI](/overlay)
+- [3D Entities](/entities)
+- [Scripts](/scripts)
+- [Assets](/assets)
+- [Apps](/apps)
+
+Or check out some [examples](/examples).
