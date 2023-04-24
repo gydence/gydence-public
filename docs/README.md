@@ -29,10 +29,10 @@ The editor allows you to make changes your projects and use the marketplace.  He
 
 | Number    | Description |
 | --------- | ----------- |
-| 1 | **Main menu.**  From here, you can create new [3D entities](/entities), add and edit [scripts](scripts), [assets](/assets), and [apps](/apps), and visit or upload to the [marketplace](/marketplace). |
+| 1 | **Main menu.**  From here, you can create new [3D entities](/entities), add and edit [scripts](/scripts), [apps](/apps), and [assets](/assets), and visit or upload to the [marketplace](/marketplace). |
 | 2 | **Scene graph.**  Choose or edit your current project or create a new one and bring up the property panel for the [scene](/scene), [2D UI](/overlay), or [3D entities](/entities). |
-| 3 | **Property panel.**  The properties of the currently selected item.  For the [scene](/scene) and [entities](/entities), these are A-FRAME component properties.  For [2D UI](/overlay), [scripts](scripts), [assets](/assets), and [apps](/apps), these can be code editors or more specific functions. |
-| 4 | **Item List.**  When [scripts](scripts), [assets](/assets), or [apps](/apps) is selected in the main menu, this panel lists all of the items of the selected type in use by your site or that you own.  You can add additional items of that type or delete them from your site. |
+| 3 | **Property panel.**  The properties of the currently selected item.  For the [scene](/scene) and [entities](/entities), these are A-FRAME component properties.  For [2D UI](/overlay), [scripts](/scripts), [apps](/apps), and [assets](/assets), these can be code editors or more specific functions. |
+| 4 | **Item List.**  When [scripts](/scripts), [apps](/apps), or [assets](/assets) is selected in the main menu, this panel lists all of the items of the selected type in use by your site or that you own.  You can add additional items of that type or delete them from your site. |
 | 5 | **Preview / Publish.** Preview your site to see what it looks like to a visitor.  Publish your site to make it public.  Changes made in the editor do not appear publicly until you publish your project again. |
 | 6 | **Info and Log out.**  Log out of the editor.  If multiple people are editing at the same time, hover over the count to see their emails. |
 
@@ -67,7 +67,8 @@ Now that you've got a project set up, add some content!  Check out more informat
 - [2D UI](/overlay)
 - [3D Entities](/entities)
 - [Scripts](/scripts)
-- [Assets](/assets)
 - [Apps](/apps)
+- [Assets](/assets)
+- The [scripting API](/api)
 
-Or check out some [examples](/examples).
+And learn about the [marketplace](/marketplace) or check out some [examples](/examples).
