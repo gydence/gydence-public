@@ -32,9 +32,11 @@ The editor allows you to make changes your projects and use the marketplace.  He
 | 1 | **Main menu.**  From here, you can create new [3D entities](/entities), add and edit [scripts](/scripts), [apps](/apps), and [assets](/assets), and visit or upload to the [marketplace](/marketplace). |
 | 2 | **Scene graph.**  Choose or edit your current project or create a new one and bring up the property panel for the [scene](/scene), [2D UI](/overlay), or [3D entities](/entities). |
 | 3 | **Property panel.**  The properties of the currently selected item.  For the [scene](/scene) and [entities](/entities), these are A-FRAME component properties.  For [2D UI](/overlay), [scripts](/scripts), [apps](/apps), and [assets](/assets), these can be code editors or more specific functions. |
-| 4 | **Item List.**  When [scripts](/scripts), [apps](/apps), or [assets](/assets) is selected in the main menu, this panel lists all of the items of the selected type in use by your site or that you own.  You can add additional items of that type or delete them from your site. |
-| 5 | **Preview / Publish.** Preview your site to see what it looks like to a visitor.  Publish your site to make it public.  Changes made in the editor do not appear publicly until you publish your project again. |
+| 4 | **Item list.**  When [scripts](/scripts), [apps](/apps), or [assets](/assets) is selected in the main menu, this panel lists all of the items of the selected type in use by your site or that you own.  You can add additional items of that type or delete them from your site. |
+| 5 | **Preview / Publish.** Preview your site to see what it looks like to a visitor.  Publish your site to make it public.  Changes made in the editor, including to assets, do not appear publicly until you publish your project again. |
 | 6 | **Info and Log out.**  Log out of the editor.  If multiple people are editing at the same time, hover over the count to see their emails. |
+| 7 | **Preview**.  The core of the editor, previewing all of the 2D + 3D content in your project. |
+| 8 | **Selection**.  The selected 3D entity will be outlined. |
 
 ## Controls
 
@@ -56,6 +58,7 @@ Default controls for the editor:
 | 1 | First person mode. |
 | 2 | Third person mode. |
 | Control | Hold to interact with 2D content while in the editor.  By default, pointer events on the 2D UI are disabled - unless explicitly enabled in your 2D UI - while editing to allow you to interact with the 3D content.
+| Click | Click on an entity to select it. |
 
 
 # Next Steps
