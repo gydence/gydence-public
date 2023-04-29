@@ -38,6 +38,7 @@ The editor allows you to make changes your projects and use the marketplace.  He
 | 7 | **Preview**.  The core of the editor, previewing all of the 2D + 3D content in your project. |
 | 8 | **Selection**.  The selected 3D entity will be outlined. |
 
+
 ## Controls
 
 Default controls for the editor:
