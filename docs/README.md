@@ -25,7 +25,7 @@ After creating your project, you can edit any of its properties except for its t
 
 The editor allows you to make changes your projects and use the marketplace.  Here is a diagram of the different parts of the editor:
 
-![/assets/editor.png]
+!(An annotated image of the editor.)[/assets/editor.png]
 
 | Number    | Description |
 | --------- | ----------- |
@@ -58,8 +58,13 @@ Default controls for the editor:
 | Shift | Hold to slow down movements. |
 | 1 | First person mode. |
 | 2 | Third person mode. |
-| Control | Hold to interact with 2D content while in the editor.  By default, pointer events on the 2D UI are disabled - unless explicitly enabled in your 2D UI - while editing to allow you to interact with the 3D content.
+| Ctrl | Hold to interact with 2D content while in the editor.  By default, pointer events on the [2D UI](/overlay) are disabled - unless explicitly enabled in your [2D UI](/overlay) - while editing to allow you to interact with the 3D content.
 | Click | Click on an entity to select it. |
+| Ctrl + Z | Undo. |
+| Ctrl + Shift + Z | Redo. |
+| Ctrl + C | Copy the selected object's properties (e.g. the [scene](/scene), [2D UI](/overlay), or an [entity](/entities), [script](/script), or [app](/app)). |
+| Ctrl + V | Duplicate the previously copied object.  If the previously selected object was a [scene](/scene), its properties will be applied to the current [scene](/scene).  If the previously selected object was the [2D UI](/overlay), it will overwrite the current [2D UI](/overlay). |
+| Ctrl + Shift + V | Same as the above, but if the previously selected object was an [entity](/entities), and the currently selected object is an [entity](/entities), the newly created [entity](/entities) will be a child of the currently selected [entity](/entities). |
 
 
 # Next Steps
