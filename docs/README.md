@@ -25,7 +25,7 @@ After creating your project, you can edit any of its properties except for its t
 
 The editor allows you to make changes your projects and use the marketplace.  Here is a diagram of the different parts of the editor:
 
-!(An annotated image of the editor.)[/assets/editor.png]
+![An annotated image of the editor.](/assets/editor.png)
 
 | Number    | Description |
 | --------- | ----------- |
@@ -36,7 +36,7 @@ The editor allows you to make changes your projects and use the marketplace.  He
 | 5 | **Preview / Publish.** Preview your site to see what it looks like to a visitor.  Publish your site to make it public.  Changes made in the editor, including to assets, do not appear publicly until you publish your project again. |
 | 6 | **Info and Log out.**  Log out of the editor.  If multiple people are editing at the same time, hover over the count to see their emails. |
 | 7 | **Preview**.  The core of the editor, previewing all of the 2D + 3D content in your project. |
-| 8 | **Selection**.  The selected 3D entity will be outlined. |
+| 8 | **Selection**.  The selected 3D [entity](/entities) will be outlined. |
 
 
 ## Controls
@@ -56,15 +56,19 @@ Default controls for the editor:
 | C | Turn up. |
 | V | Turn down. |
 | Shift | Hold to slow down movements. |
+| Ctrl | Hold to interact with 2D content while in the editor.  By default, pointer events on the [2D UI](/overlay) are disabled - unless explicitly enabled in your [2D UI](/overlay) - while editing to allow you to interact with the 3D content. |
 | 1 | First person mode. |
 | 2 | Third person mode. |
-| Ctrl | Hold to interact with 2D content while in the editor.  By default, pointer events on the [2D UI](/overlay) are disabled - unless explicitly enabled in your [2D UI](/overlay) - while editing to allow you to interact with the 3D content.
-| Click | Click on an entity to select it. |
+| Click | Click on an [entity](/entities) to select it. |
+| Click + Drag | Reposition the selected [entity](/entities) on the XZ plane. |
+| Click + Shift + Drag | Reposition the selected [entity](/entities) on the Y axis. |
 | Ctrl + Z | Undo. |
 | Ctrl + Shift + Z | Redo. |
 | Ctrl + C | Copy the selected object's properties (e.g. the [scene](/scene), [2D UI](/overlay), or an [entity](/entities), [script](/script), or [app](/app)). |
 | Ctrl + V | Duplicate the previously copied object.  If the previously selected object was a [scene](/scene), its properties will be applied to the current [scene](/scene).  If the previously selected object was the [2D UI](/overlay), it will overwrite the current [2D UI](/overlay). |
 | Ctrl + Shift + V | Same as the above, but if the previously selected object was an [entity](/entities), and the currently selected object is an [entity](/entities), the newly created [entity](/entities) will be a child of the currently selected [entity](/entities). |
+| Click + P | Make the newly selected [entity](/entities) a child of the newly selected [entity](/entities). |
+| Delete | Delete the currently selected object. |
 
 
 # Next Steps
