@@ -64,7 +64,7 @@ Default controls for the editor:
 | Click + Shift + Drag | Reposition the selected [entity](/entities) on the Y axis. |
 | Ctrl + Z | Undo. |
 | Ctrl + Shift + Z | Redo. |
-| Ctrl + C | Copy the selected object's properties (e.g. the [scene](/scene), [2D UI](/overlay), or an [entity](/entities), [script](/script), or [app](/app)). |
+| Ctrl + C | Copy the selected object's properties (e.g. the [scene](/scene), [2D UI](/overlay), or an [entity](/entities), [script](/scripts), or [app](/apps)). |
 | Ctrl + V | Duplicate the previously copied object.  If the previously selected object was a [scene](/scene), its properties will be applied to the current [scene](/scene).  If the previously selected object was the [2D UI](/overlay), it will overwrite the current [2D UI](/overlay). |
 | Ctrl + Shift + V | Same as the above, but if the previously selected object was an [entity](/entities), and the currently selected object is an [entity](/entities), the newly created [entity](/entities) will be a child of the currently selected [entity](/entities). |
 | Click + P | Make the newly selected [entity](/entities) a child of the newly selected [entity](/entities). |

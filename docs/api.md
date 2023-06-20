@@ -10,23 +10,23 @@ Note: all variables are read-only.
 
 These variables and functions are always available.
 
-#### isEditing
+### isEditing
 
 Value: `true` if this script is running inside of the editor, `false` otherwise.
 
-#### currentSite
+### currentSite
 
 Value: The UUID of the current project.
 
-#### publicSiteURL
+### publicSiteURL
 
 Value: The public URL of the current project.
 
-#### privateSiteURL
+### privateSiteURL
 
 Value: The private URL of the current project.
 
-#### assetURL
+### assetURL
 
 Value: The base URL for this project's assets.  This will point to the draft asset URL during editing and previewing, and the published asset URL on the public project.
 
@@ -35,7 +35,7 @@ Value: The base URL for this project's assets.  This will point to the draft ass
 
 These variables and functions are only available from within the editor (when `GYDENCE.isEditing` is `true`).
 
-#### listAssets
+### listAssets
 
 Lists the draft assets for this project according to the provided `options`.  See the [supabase docs](https://supabase.com/docs/reference/javascript/storage-from-list) for more info.
 
@@ -47,13 +47,13 @@ Returns: a `Promise` to a list of assets for this project, fetched according to 
 
 Note: by default, this may fail to return all assets if there are more than 100.  See `listAllAssets`.
 
-#### listAllAssets
+### listAllAssets
 
 Lists all of the draft assets for this project.  See the [supabase docs](https://supabase.com/docs/reference/javascript/storage-from-list) for more info.
 
 Returns: a `Promise` to a list of all assets for this project.
 
-#### uploadAsset
+### uploadAsset
 
 Upload `asset` to your project's draft storage with the filename `name`, according to the provided `options`.  See the [supabase docs](https://supabase.com/docs/reference/javascript/storage-from-upload) for more info.
 
@@ -65,7 +65,7 @@ Upload `asset` to your project's draft storage with the filename `name`, accordi
 
 Returns: a `Promise` to the result of the upload.
 
-#### renameAsset
+### renameAsset
 
 Rename the asset with `oldName` to `newName` if it exists in your project's draft storage.  See the [supabase docs](https://supabase.com/docs/reference/javascript/storage-from-move) for more info.
 
@@ -76,7 +76,7 @@ Rename the asset with `oldName` to `newName` if it exists in your project's draf
 
 Returns: a `Promise` to the result of the rename.
 
-#### deleteAssets
+### deleteAssets
 
 Delete all of the assets with names in `filenames` if they exist in your project's draft storage.  See the [supabase docs](https://supabase.com/docs/reference/javascript/storage-from-remove) for more info.
 
@@ -86,7 +86,7 @@ Delete all of the assets with names in `filenames` if they exist in your project
 
 Returns: a `Promise` to the result of the removals.
 
-#### scenePropertyMap
+### scenePropertyMap
 
 Value: an object where the keys are all of the components and systems on the [scene](/scene) and the values are their property values.  **Read-only**.
 
@@ -108,11 +108,11 @@ Edit or remove a [scene](/scene) component or system.
 | --------- | ----------- |
 | prop | The component or system to modify. |
 | value | The desired value for the component or system.  If `undefined`, the component/system will be removed. |
-| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/?id=forceupdate). |
+| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/api?id=forceupdate). |
 
 Returns: a `Promise` to the result of the edit.
 
-#### entityPropertyMap
+### entityPropertyMap
 
 Value: an object where the keys are all of the [entity](/entities) IDs and the values are objects where the keys are component names and the values are the property values.  **Read-only**.
 
@@ -134,7 +134,7 @@ Add a new entity with the desired properties.
 | Parameter | Description |
 | --------- | ----------- |
 | props | An object where the keys are all of the desired components and the values are their desired properties. |
-| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/?id=forceupdate). |
+| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/api?id=forceupdate). |
 
 Returns: a `Promise` to the result of the add.
 
@@ -145,7 +145,7 @@ Adds multiple new entities with the desired properties.
 | Parameter | Description |
 | --------- | ----------- |
 | propsArray | An array of objects where the keys are all of the desired components and the values are their desired properties for each separate entity. |
-| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/?id=forceupdate). |
+| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/api?id=forceupdate). |
 
 Returns: a `Promise` to the result of the adds.
 
@@ -158,7 +158,7 @@ Edit or remove a component on an [entity](/entities).
 | entityID | The ID of the entity to edit. |
 | prop | The component to modify. |
 | value | The desired value for the component.  If `undefined`, the component/system will be removed. |
-| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/?id=forceupdate). |
+| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/api?id=forceupdate). |
 
 Returns: a `Promise` to the result of the edit.
 
@@ -169,11 +169,11 @@ Delete the desired entity.
 | Parameter | Description |
 | --------- | ----------- |
 | entityID | The ID of the entity to delete. |
-| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/?id=forceupdate). |
+| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/api?id=forceupdate). |
 
 Returns: a `Promise` to the result of the deletion.
 
-#### overlayElements
+### overlayElements
 
 Value: a string representation of all of the [2D UI](/overlay) HTML.  **Read-only**.
 
@@ -188,11 +188,11 @@ Edit the [2D UI](/overlay) HTML string.
 | Parameter | Description |
 | --------- | ----------- |
 | value | The desired value for the [2D UI](/overlay) HTML, represented as a string. |
-| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/?id=forceupdate). |
+| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/api?id=forceupdate). |
 
 Returns: a `Promise` to the result of the edit.
 
-#### css
+### css
 
 Value: a string representation of all of the [2D UI](/overlay) CSS.  **Read-only**.
 
@@ -207,49 +207,49 @@ Edit the [2D UI](/overlay) CSS string.
 | Parameter | Description |
 | --------- | ----------- |
 | value | The desired value for the [2D UI](/overlay) CSS, represented as a string. |
-| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/?id=forceupdate). |
+| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/api?id=forceupdate). |
 
 Returns: a `Promise` to the result of the edit.
 
-#### scripts
+### scripts
 
-Value: an array of all of the [scripts](/script).  Each entry includes properties like `id` and `name` among others.  **Read-only**.
+Value: an array of all of the [scripts](/scripts).  Each entry includes properties like `id` and `name` among others.  **Read-only**.
 
 ### getScripts
 
-Returns: the array of all [scripts](/script) with their properties.
+Returns: the array of all [scripts](/scripts) with their properties.
 
 ### editScript
 
-Edit a single property of a [script](/script).
+Edit a single property of a [script](/scripts).
 
 | Parameter | Description |
 | --------- | ----------- |
 | scriptID | The ID of the script to edit. |
 | prop | The property to modify. |
 | value | The desired value for the property. |
-| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/?id=forceupdate). |
+| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/api?id=forceupdate). |
 
 Returns: a `Promise` to the result of the edit.
 
-#### apps
+### apps
 
-Value: an array of all of the [apps](/app).  Each entry includes properties like `id` and `name` among others.  **Read-only**.
+Value: an array of all of the [apps](/apps).  Each entry includes properties like `id` and `name` among others.  **Read-only**.
 
 ### getApps
 
-Returns: the array of all [apps](/app) with their properties.
+Returns: the array of all [apps](/apps) with their properties.
 
 ### editApp
 
-Edit a single property of a [app](/app).
+Edit a single property of a [app](/apps).
 
 | Parameter | Description |
 | --------- | ----------- |
 | appID | The ID of the app to edit. |
 | prop | The property to modify. |
 | value | The desired value for the property. |
-| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/?id=forceupdate). |
+| forceUpdate | **Optional, default = true**.  Whether or not to force a [local update](/api?id=forceupdate). |
 
 Returns: a `Promise` to the result of the edit.
 
