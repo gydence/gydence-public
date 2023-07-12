@@ -14,6 +14,10 @@ These variables and functions are always available.
 
 Value: `true` if this script is running inside of the editor, `false` otherwise.
 
+### isApp
+
+Value: `true` if this script is running inside of an app, `false` otherwise.
+
 ### currentSite
 
 Value: The UUID of the current project.
